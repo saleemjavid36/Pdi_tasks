@@ -1,0 +1,87 @@
+.table-main-container{
+    // height: 150px;
+    max-width: 500px;
+    overflow-y: auto;
+    border-collapse: separate;
+ 
+}
+
+.sshr_header{
+    // position: absolute;
+    left: 3px;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+}
+.sshc {
+    background-color: threedface;
+    font-family: Verdana;
+    font-size: 8pt;
+    font-weight: bold;
+    color: black;
+    cursor: default;
+    height: 15px;
+    border-top: solid 1px #000000;
+    border-left: solid 1px #000000;
+    min-width: 30px;
+}
+.smartScheduleResourceHeader {
+    background-color: cadetblue;
+    font-family: Verdana;
+    font-size: 8pt;
+    font-weight: bold;
+    color: black;
+    cursor: default;
+    height: 15px;
+    border-top: solid 1px #000000;
+    border-left: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+    border-right: solid 1px #000000;
+}
+
+.resource {
+    font-family: Tahoma;
+    font-size: 8.5pt;
+    font-weight: bold;
+    color: black;
+    cursor: default;
+    border-left: solid 1px #000000;
+    border-right: solid 1px #000000;
+}
+
+.smartScheduleDriverHeader {
+    background-color: threedface;
+    font-family: Verdana;
+    font-size: 8pt;
+    font-weight: bold;
+    color: black;
+    cursor: default;
+    height: 15px;
+    border-bottom: solid 1px #000000;
+    padding-left: 3px;
+}
+.smartScheduleDriverUnavailable {
+    background-color: #cccccc;
+    font-family: Verdana;
+    font-size: 8pt;
+    font-weight: bold;
+    color: black;
+    cursor: default;
+    height: 15px;
+    border-bottom: solid 1px #999999;
+    border-right: solid 1px #000000;
+}
+.c1 {
+    background-color: #fefefe;
+    font-family: Verdana;
+    font-size: 6pt;
+    color: black;
+    cursor: default;
+    height: 64px;
+    text-align: left;
+    vertical-align: middle;
+    border-right: solid 1px #dedede;
+    border-bottom:solid 1px gray;
+}
+
+

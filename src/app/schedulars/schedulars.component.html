@@ -1,0 +1,538 @@
+<table class="table-main-container">
+    <tbody>
+        <tr class="sshr_header" >
+            <th class="sshc" style="width: 2%;" rowspan="1" colspan="1"></th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">0000</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">0100</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">0200</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">0300</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">0400</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">0500</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">0600</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">0700</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">0800</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">1000</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">1100</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">1200</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">1300</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">1400</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">1500</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">1600</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">1700</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1" >1800</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">1900</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">2000</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">2100</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">2200</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">2300</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">0000</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">0100</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">0200</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">0300</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">0400</th>
+            <th class="sshc" style="width: 4%;" rowspan="1" colspan="1">0500</th>
+        </tr>
+        <!-- sscollapseHeader -->
+        <tr>
+            <td class="smartScheduleResourceHeader" style="cursor: pointer;border-right-width: 0px;width: 29%;padding-left: 3px;"
+            rowspan="1" colspan="40"
+            >
+            <i class="pi pi-minus-circle" style="font-size: 0.6rem" (click)="onClickAustin()"></i>
+           <span>1.Austin</span>
+            </td>
+        </tr>
+        <!-- main Part Both TRUck icon and Header-->
+        <tr *ngIf="isOpened">
+            <td class="resource" style="width: 2%;" rowspan="2" colspan="1">
+                <table style="height: 80px; width: 100%; border-collapse: collapse; max-height: 80px;background-color: aquamarine;"
+                border="0" [cellSpacing]="0" [cellPadding]="0">
+                    <tbody>
+                        <tr rowspan="1" colspan="1" style="height: 20px;"><span></span></tr>
+                        <tr rowspan="1" colspan="1" style="height: 40px;display: flex;align-items: center;">
+                             <i class="pi pi-truck" style="font-size: 0.8rem"></i>
+                            <span style="font-size: 10px;margin-left: 5px;font-weight: 600;">Regression_29_May</span>
+                        </tr>
+                        <tr rowspan="1" colspan="1" style="height: 20px;"><span></span></tr>
+                    </tbody>
+            
+                </table>
+            </td>
+
+            <td class="smartScheduleDriverHeader" style="cursor: pointer; border-right: #008a34 3px solid; width: 40%;
+            padding-left: 5px;" rowspan="1" colspan="18" (click)="showDialog()">
+                 <i class="pi pi-user" style="font-size: 0.6rem"> ...</i>
+            </td>
+
+            <td class="smartScheduleDriverHeader" style="cursor: pointer; border-right: #008a34 3px solid; width: 40%;
+            padding-left: 5px;" rowspan="1" colspan="8">
+                 <span title="Gardener,Will Turn Time:0h">Gardener, Will (0h)</span>
+            </td>
+
+            <td class="smartScheduleDriverUnavailable" style="width: 20%;" rowspan="1" colspan="12">
+            </td>
+        </tr>
+
+        <!-- ScHedularboxes -->
+       
+       
+        <tr *ngIf="isOpened">
+            <td class="c1"  style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%; " rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%; border-right: #008a34 solid 3px;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%; border-right: #008a34 solid 3px;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+        </tr>
+        <!-- main Part Both TRUck icon and Header-->
+        <tr *ngIf="isOpened">
+            <td class="resource" style="width: 2%;" rowspan="2" colspan="1">
+                <table style="height: 80px; width: 100%; border-collapse: collapse; max-height: 80px;background-color: aquamarine;"
+                border="0" [cellSpacing]="0" [cellPadding]="0">
+                    <tbody>
+                        <tr rowspan="1" colspan="1" style="height: 20px;"><span></span></tr>
+                        <tr rowspan="1" colspan="1" style="height: 40px;display: flex;align-items: center;">
+                             <i class="pi pi-truck" style="font-size: 0.8rem"></i>
+                            <span style="font-size: 10px;margin-left: 5px;font-weight: 600;">FB6</span>
+                        </tr>
+                        <tr rowspan="1" colspan="1" style="height: 20px;"><span></span></tr>
+                    </tbody>
+            
+                </table>
+            </td>
+
+            <td class="smartScheduleDriverHeader" style="cursor: pointer; border-right: #008a34 3px solid; width: 40%;
+            padding-left: 5px;" rowspan="1" colspan="18">
+                 <i class="pi pi-user" style="font-size: 0.6rem"> ...</i>
+            </td>
+
+            <td class="smartScheduleDriverHeader" style="cursor: pointer; border-right: #008a34 3px solid; width: 40%;
+            padding-left: 5px;" rowspan="1" colspan="8">
+                <i class="pi pi-user" style="font-size: 0.6rem"> ...</i>
+            </td>
+
+            <td class="smartScheduleDriverUnavailable" style="width: 20%;" rowspan="1" colspan="12">
+            </td>
+        </tr>
+
+        <!-- ScHedularboxes -->
+        <tr *ngIf="isOpened">
+            <td class="c1"  style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;border-right: #008a34 solid 3px;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;border-right: #008a34 solid 3px;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+        </tr>
+
+
+        <!-- 2nd PART -->
+        <tr>
+            <td class="smartScheduleResourceHeader" style="cursor: pointer;border-right-width: 0px;width: 29%;padding-left: 3px;"
+            rowspan="1" colspan="40"
+            >
+            <i class="pi pi-minus-circle" style="font-size: 0.6rem" (click)="isaustin2()"></i>
+           <span> Austin</span>
+            </td>
+        </tr>
+        <!-- main Part Both TRUck icon and Header-->
+        <tr *ngIf="is2Opened">
+            <td class="resource" style="width: 2%;" rowspan="2" colspan="1">
+                <table style="height: 80px; width: 100%; border-collapse: collapse; max-height: 80px;background-color: aquamarine;"
+                border="0" [cellSpacing]="0" [cellPadding]="0">
+                    <tbody>
+                        <tr rowspan="1" colspan="1" style="height: 20px;"><span></span></tr>
+                        <tr rowspan="1" colspan="1" style="height: 40px;display: flex;align-items: center;">
+                             <i class="pi pi-truck" style="font-size: 0.8rem"></i>
+                            <span style="font-size: 10px;margin-left: 5px;font-weight: 600;">FB1</span>
+                        </tr>
+                        <tr rowspan="1" colspan="1" style="height: 20px;"><span></span></tr>
+                    </tbody>
+            
+                </table>
+            </td>
+
+            <td class="smartScheduleDriverHeader" style="cursor: pointer; border-right: #008a34 3px solid; width: 40%;
+            padding-left: 5px;" rowspan="1" colspan="14">
+                 <i class="pi pi-user" style="font-size: 0.6rem"> ...</i>
+            </td>
+
+            <td class="smartScheduleDriverHeader" style="cursor: pointer; border-right: #008a34 3px solid; width: 40%;
+            padding-left: 5px;" rowspan="1" colspan="8">
+                 <span title="Gardener,Will Turn Time:0h">Hampton, Tom (0h)</span>
+            </td>
+
+            <td class="smartScheduleDriverUnavailable" style="width: 20%;" rowspan="1" colspan="12">
+            </td>
+        </tr>
+
+        <!-- ScHedularboxes -->
+        <tr  *ngIf="is2Opened">
+            <td class="c1"  style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;border-right: #008a34 solid 3px;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;border-right: #008a34 solid 3px;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+        </tr>
+        
+
+        <!-- main Part Both TRUck icon and Header-->
+        <tr  *ngIf="is2Opened">
+            <td class="resource" style="width: 2%;" rowspan="2" colspan="1">
+                <table style="height: 80px; width: 100%; border-collapse: collapse; max-height: 80px;background-color: aquamarine;"
+                border="0" [cellSpacing]="0" [cellPadding]="0">
+                    <tbody>
+                        <tr rowspan="1" colspan="1" style="height: 20px;"><span></span></tr>
+                        <tr rowspan="1" colspan="1" style="height: 40px;display: flex;align-items: center;">
+                             <i class="pi pi-truck" style="font-size: 0.8rem"></i>
+                            <span style="font-size: 10px;margin-left: 5px;font-weight: 600;">FB6</span>
+                        </tr>
+                        <tr rowspan="1" colspan="1" style="height: 20px;"><span></span></tr>
+                    </tbody>
+            
+                </table>
+            </td>
+
+            <td class="smartScheduleDriverHeader" style="cursor: pointer; border-right: #008a34 3px solid; width: 40%;
+            padding-left: 5px;" rowspan="1" colspan="18">
+                <span title="Gardener,Will Turn Time:0h">Stroby, Billy (0h)</span>
+            </td>
+
+            <td class="smartScheduleDriverHeader" style="cursor: pointer; border-right: #008a34 3px solid; width: 40%;
+            padding-left: 5px;" rowspan="1" colspan="8">
+               <span title="Gardener,Will Turn Time:0h">Bolton,Kyle(0h)</span>
+            </td>
+
+            <td class="smartScheduleDriverUnavailable" style="width: 20%;" rowspan="1" colspan="12">
+            </td>
+        </tr>
+
+        <!-- ScHedularboxes -->
+        <tr  *ngIf="is2Opened">
+            <td class="c1"  style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;border-right: #008a34 solid 3px;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;border-right: #008a34 solid 3px;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+        </tr>
+
+
+        <!-- 3rd PART -->
+
+        <tr>
+            <td class="smartScheduleResourceHeader" style="cursor: pointer;border-right-width: 0px;width: 29%;padding-left: 3px;"
+            rowspan="1" colspan="40"
+            >
+            <i class="pi pi-minus-circle" style="font-size: 0.6rem" (click)="istestOpened()"></i>
+           <span> tst</span>
+            </td>
+        </tr>
+
+        <tr *ngIf="is3Opened">
+            <td class="resource" style="width: 2%;" rowspan="2" colspan="1">
+                <table style="height: 80px; width: 100%; border-collapse: collapse; max-height: 80px;background-color: aquamarine;"
+                border="0" [cellSpacing]="0" [cellPadding]="0">
+                    <tbody>
+                        <tr rowspan="1" colspan="1" style="height: 20px;"><span></span></tr>
+                        <tr rowspan="1" colspan="1" style="height: 40px;display: flex;align-items: center;">
+                             <i class="pi pi-truck" style="font-size: 0.8rem"></i>
+                            <span style="font-size: 10px;margin-left: 5px;font-weight: 600;">FB1</span>
+                        </tr>
+                        <tr rowspan="1" colspan="1" style="height: 20px;"><span></span></tr>
+                    </tbody>
+            
+                </table>
+            </td>
+
+            <td class="smartScheduleDriverHeader" style="cursor: pointer; border-right: #008a34 3px solid; width: 40%;
+            padding-left: 5px;" rowspan="1" colspan="14">
+                 <i class="pi pi-user" style="font-size: 0.6rem"> ...</i>
+            </td>
+
+            <td class="smartScheduleDriverHeader" style="cursor: pointer; border-right: #008a34 3px solid; width: 40%;
+            padding-left: 5px;" rowspan="1" colspan="8">
+                <i class="pi pi-user" style="font-size: 0.6rem"> ...</i>
+            </td>
+
+            <td class="smartScheduleDriverUnavailable" style="width: 20%;" rowspan="1" colspan="12">
+            </td>
+        </tr>
+
+        <!-- ScHedularboxes -->
+        <tr *ngIf="is3Opened">
+            <td class="c1"  style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;border-right: #008a34 solid 3px;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;border-right: #008a34 solid 3px;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+            <td class="c1" [vAlign]="" style="width: 2%;background-color: #cccccc;" rowspan="1 collapse1">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p-dialog header="Header" [(visible)]="visible" [style]="{width: '50vw'}">
+    <p>
+      
+    </p>
+</p-dialog>

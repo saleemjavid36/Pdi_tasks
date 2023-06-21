@@ -1,0 +1,63 @@
+
+<div>
+    <div class="controlls">
+       
+    </div>
+    
+    <div class="table">
+        <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th> Email</th>
+                <th> Gender</th>
+                <th>JobTitle</th>
+            </tr>
+        </thead>
+        <tbody >
+            <!-- [class.selected-col]="emp.Id===selectedRowIndex" -->
+            <!-- for alternative colours -->
+            <!-- [style.background-color]="emp.Id == idx ? 'yellow' : (even ? 'red' : 'green')" -->
+        <tr *ngFor="let emp of EmpData let idx=index;let even=even"
+        style="cursor: context-menu;"
+         [class.selected]="isRowSelected(emp.Id)" 
+         (click)="highlightedRow($event,emp.Id)" 
+         
+         
+         [style.background]="clickedOutside && isRowSelected(emp.Id)?'gray':''" 
+        (clickOutside)="clickOutsideTheRow($event)"
+        (contextmenu)="onSelectingMultiple($event);$event. preventDefault();"
+        #trElement
+
+        >
+            <td></td>
+            <td [class.selected-col]="isRowSelected(emp.Id)" >{{emp.FirstName}}</td>
+            <td [class.selected-col]="isRowSelected(emp.Id)">
+                {{emp.LastName}}
+            </td>
+            <td [class.selected-col]="isRowSelected(emp.Id)">{{emp.Email}}</td>
+            <td [class.selected-col]="isRowSelected(emp.Id)">{{emp.Gender}}</td>
+            <td [class.selected-col]="isRowSelected(emp.Id)">{{emp.JobTitle}}</td>
+        </tr>
+    </tbody>
+</table>
+<!-- <div class="contextmenu" [ngStyle]="getRightClickMenuStyle()">
+    <p>{{rightClickMenuPositionX}}</p>
+    <p>{{rightClickMenuPositionY}}</p>
+</div> -->
+
+    <app-context-menu
+   [x]="rightClickMenuPositionX"
+   [y]="rightClickMenuPositionY"
+    *ngIf="contextmenu"
+    [selectedIds]="selectedRowsData"
+    ></app-context-menu>
+    </div>
+
+    <div *ngFor="let i of selectedRowsData">
+        <!-- <p>{{i.FirstName}}</p> -->
+    </div>
+</div>
+

@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "name":"Order Number"
+    },
+    {
+        "id":2,
+        "name":"Special Notes"
+    },
+    {
+        "id":3,
+        "name":"Carrier"
+    },
+    {
+        "id":4,
+        "name":"Bill To Company"
+    },
+    {
+        "id":5,
+        "name":"Creation"
+    },
+    {
+        "id":6,
+        "name":"Completion"
+    }
+    
+]

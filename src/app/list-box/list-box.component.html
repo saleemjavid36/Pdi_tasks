@@ -1,0 +1,36 @@
+
+<div class="lb-main-container">
+    <ul class="lb-content-container-ul">
+        <li 
+        class="ul-list" *ngFor="let field of availableFields
+         let index=index let odd = odd"
+        [class.aqua-color]="odd"
+        [class.light-blue-color]="selectedLeftBoxRowsIndexes.length===0 && index===0"
+        [class.blue-color]="rowSelected(field.id)"
+        (click)="leftBoxHighlightedRow($event,field.id)" 
+        (mouseover)="mouseover($event)"
+        >{{field.name}}</li>
+    </ul>
+
+    <div class="buttons-container">
+        <button class="btn" (click)="onClickAdd()">Add-></button>
+        <button class="btn" (click)="onClickRemove()"><-remove</button>
+    </div>
+
+    <div class="lb-content-container-2">
+        <ul class="lb-content-container-ul-2" >
+            <li 
+            class="ul-list" *ngFor="let displayField of toDisplayField let index=index let odd=odd"
+            [class.aqua-color]="odd"
+            [class.light-blue-color]="selectedRightBoxRowsIndexes.length===0 && index===0"
+            [class.blue-color]="rightrowSelected(displayField.id)"
+            (click)="rightBoxHighlightedRow($event,displayField.id)"
+            >{{displayField.name}}</li>
+        </ul>
+        <div class="arrow-buttons-container">
+            <button class="arrow-btn" (click)="moveUp()">Move Up</button>
+            <button class="arrow-btn" (click)="moveDown()">Move Down</button>
+        </div>
+    </div>
+    
+</div>
